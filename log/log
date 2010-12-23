@@ -1,0 +1,254 @@
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+d/emei/npc/jing-xin.c line 5: Cannot #include nigu.h
+d/emei/npc/jing-xin.c line 5: Cannot #include nigu.h
+d/emei/npc/jing-xin.c line 34: Undefined variable 'ask_for_join'
+d/emei/npc/jing-xin.c line 34: parse error
+d/emei/npc/jing-xin.c line 68: Illegal LHS
+d/emei/npc/jing-xin.c line 68: parse error
+d/emei/npc/jing-xin.c line 69: Undefined variable 'me'
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+d/wizard/npc/fairy.c line 91: Warning: Non-void functions must return a value.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+cmds/wiz/mcheck.c line 26: Undefined function query_ip_rport
+cmds/wiz/mcheck.c line 26: Invalid argument types to '+' ( string vs unknown )
+cmds/wiz/mcheck.c line 39: Invalid argument types to '+' ( string vs unknown )
+cmds/wiz/mcheck.c line 63: Invalid argument types to '+' ( string vs unknown )
+cmds/wiz/cpu.c line 8: Undefined function rusage
+cmds/wiz/cpu.c line 8: Bad assignment ( mapping vs unknown ).
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+cmds/usr/help.c line 17: Cannot #include /help/help.h
+cmds/usr/help.c line 22: Undefined variable 'DEFAULT_SEARCH_PATHS'
+cmds/usr/help.c line 17: Cannot #include /help/help.h
+cmds/usr/help.c line 22: Undefined variable 'DEFAULT_SEARCH_PATHS'
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+d/gb/npc/gb_nz.c line 41: parse error
+d/wizard/npc/fairy.c line 91: Warning: Non-void functions must return a value.
+d/wuguan/npc/shizhe.c line 95: Undefined variable 'HBHIW'
+d/wuguan/npc/shizhe.c line 95: parse error
+d/wuguan/npc/shizhe.c line 136: Illegal LHS
+d/wuguan/npc/shizhe.c line 136: parse error
+d/wuguan/npc/shizhe.c line 137: Illegal LHS
+d/wuguan/npc/shizhe.c line 137: parse error
+d/city/npc/cloth.c line 23: Cannot #include /u/yueying/obj/item/bkup.h
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+d/huashan/npc/mu_renqing.c line 161: Warning: Return type doesn't match prototype ( string vs int )
+d/huashan/npc/mu_renqing.c line 180: Warning: Return type doesn't match prototype ( string vs int )
+d/huashan/npc/mu_renqing.c line 225: Warning: Return type doesn't match prototype ( string vs int )
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+d/huashan/npc/mu_renqing.c line 161: Warning: Return type doesn't match prototype ( string vs int )
+d/huashan/npc/mu_renqing.c line 180: Warning: Return type doesn't match prototype ( string vs int )
+d/huashan/npc/mu_renqing.c line 225: Warning: Return type doesn't match prototype ( string vs int )
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+adm/daemons/channeld.c line 194: parse error
+adm/daemons/channeld.c line 206: Illegal LHS
+adm/daemons/channeld.c line 207: Warning: Value of conditional expression is unused
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+d/jiaxing/npc/xia.c line 274: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 322: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 384: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 386: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 389: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 274: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 322: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 384: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 386: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 389: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 274: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 322: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 384: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 386: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 389: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 274: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 322: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 384: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 386: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 389: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 274: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 322: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 384: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 386: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 389: Warning: Non-void functions must return a value.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+adm/daemons/logind.c line 552: Wrong number of arguments to get_email
+    Expected: 3  Got: 6
+adm/daemons/logind.c line 552: Bad type for argument 3 of get_email ( mapping vs int )
+cmds/usr/paimai.c line 717: Number of arguments disagrees with previous definition.
+cmds/usr/paimai.c line 717: Number of arguments disagrees with previous definition.
+d/wizard/npc/fairy.c line 91: Warning: Non-void functions must return a value.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+d/huashan/npc/mu_renqing.c line 161: Warning: Return type doesn't match prototype ( string vs int )
+d/huashan/npc/mu_renqing.c line 180: Warning: Return type doesn't match prototype ( string vs int )
+d/huashan/npc/mu_renqing.c line 225: Warning: Return type doesn't match prototype ( string vs int )
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+d/huashan/npc/mu_renqing.c line 161: Warning: Return type doesn't match prototype ( string vs int )
+d/huashan/npc/mu_renqing.c line 180: Warning: Return type doesn't match prototype ( string vs int )
+d/huashan/npc/mu_renqing.c line 225: Warning: Return type doesn't match prototype ( string vs int )
+d/wizard/npc/fairy.c line 91: Warning: Non-void functions must return a value.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+d/gb/npc/gb_nz.c line 41: parse error
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+d/wizard/npc/fairy.c line 91: Warning: Non-void functions must return a value.
+d/huashan/npc/mu_renqing.c line 161: Warning: Return type doesn't match prototype ( string vs int )
+d/huashan/npc/mu_renqing.c line 180: Warning: Return type doesn't match prototype ( string vs int )
+d/huashan/npc/mu_renqing.c line 225: Warning: Return type doesn't match prototype ( string vs int )
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+d/xiangyang/wen/quest/npc/wenyi.c line 101: Warning: Non-void functions must return a value.
+d/xiangyang/wen/quest/npc/wenyi.c line 102: Warning: Non-void functions must return a value.
+d/xiangyang/wen/quest/npc/wenyi.c line 293: Warning: Return type doesn't match prototype ( string vs void )
+cmds/adm/giftall.c line 35: Undefined function all_interactive
+d/wizard/npc/fairy.c line 91: Warning: Non-void functions must return a value.
+d/xiangyang/wen/quest/npc/wenyi.c line 101: Warning: Non-void functions must return a value.
+d/xiangyang/wen/quest/npc/wenyi.c line 102: Warning: Non-void functions must return a value.
+d/xiangyang/wen/quest/npc/wenyi.c line 293: Warning: Return type doesn't match prototype ( string vs void )
+d/xiangyang/wen/quest/npc/wenyi.c line 101: Warning: Non-void functions must return a value.
+d/xiangyang/wen/quest/npc/wenyi.c line 102: Warning: Non-void functions must return a value.
+d/xiangyang/wen/quest/npc/wenyi.c line 293: Warning: Return type doesn't match prototype ( string vs void )
+adm/daemons/jieti.c line 93: Number of arguments disagrees with previous definition.
+adm/daemons/jieti.c line 93: Number of arguments disagrees with previous definition.
+adm/daemons/jieti.c line 93: Number of arguments disagrees with previous definition.
+adm/daemons/jieti.c line 93: Number of arguments disagrees with previous definition.
+adm/daemons/jieti.c line 93: Number of arguments disagrees with previous definition.
+adm/daemons/jieti.c line 93: Number of arguments disagrees with previous definition.
+adm/daemons/jieti.c line 82: parse error
+adm/daemons/jieti.c line 82: parse error
+cmds/usr/bwscore.c line 79: Warning: Return type doesn't match prototype ( int vs void )
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/skill/zixia-gong.c line 8: Warning: bitwise operation on boolean values.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/wizard/npc/fairy.c line 91: Warning: Non-void functions must return a value.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+d/jiaxing/npc/xia.c line 274: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 322: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 384: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 386: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 389: Warning: Non-void functions must return a value.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/wizard/npc/fairy.c line 91: Warning: Non-void functions must return a value.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/wizard/npc/fairy.c line 91: Warning: Non-void functions must return a value.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+d/jiaxing/npc/xia.c line 274: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 322: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 384: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 386: Warning: Non-void functions must return a value.
+d/jiaxing/npc/xia.c line 389: Warning: Non-void functions must return a value.
+d/city/npc/r_name.h line 238: Redeclaration of function random_name.
+d/city/npc/r_name.h line 271: Redeclaration of function get_random_name.
+d/city/npc/wushi.c line 32: Redeclaration of function create_nick.
+kungfu/class/kunlun/xihuazi.c line 106: Number of arguments disagrees with previous definition.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
+feature/treemap.c line 1: Warning: Unknown #pragma, ignored.
+feature/move.c line 7: Warning: Unknown #pragma, ignored.
