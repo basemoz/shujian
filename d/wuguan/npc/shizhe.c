@@ -24,6 +24,7 @@ string ask_tttt();
 string ask_thd();
 string ask_tz();
 string ask_tls();
+string ask_hm();
 object ob = this_object();
 void create()
 {
@@ -73,6 +74,7 @@ void create()
 "铁掌" : (: ask_tz :),
 "神龙岛" : (: ask_sld :),
 "昆仑" : (: ask_kl :),
+"洪门" : (: ask_hm :),
       ]) );
 }
 string ask_newbie()
@@ -600,6 +602,57 @@ string ask_kl()
     this_player()->set_skill("dodge",SKILLS_LEVEL);
     this_player()->set_skill("throwing",SKILLS_LEVEL);
     this_player()->set_skill("art",200);
+    this_player()->set("shen",100000);
+    this_player()->set("shizhe_拜师",1);
+
+    return "hehe";
+}
+string ask_hm()
+{
+    if (this_player()->query("shizhe_拜师")) return "你不是要过一次门派skills了嘛！？\n";
+    if (!this_player()->query("shizhe_newbie")) return "你必须要先ask shizhe about newbie！？\n";
+    message_vision(HIY "使者"+ NOR "一挥手，一阵狂风将$N吹得无影无踪了。"+ NOR "\n",this_player());
+        
+	this_player()->set("str", 100);
+    this_player()->set("per", 100);
+    this_player()->set("int", 100);
+    this_player()->set("con", 100);
+    this_player()->set("dex", 100);
+
+    this_player()->set("combat_exp", 5000000);
+	
+    this_player()->set("neili", 100000);
+    this_player()->set("max_neili", 100000);
+    this_player()->set("jingli", 100000);
+    this_player()->set("max_jingli", 100000);
+    this_player()->set("eff_jingli", 100000);
+    this_player()->set("qi", 100000);
+    this_player()->set("max_qi", 100000);
+    this_player()->set("eff_qi", 100000);
+    this_player()->set("jing", 100000);
+    this_player()->set("max_jing", 100000);
+    this_player()->set("eff_jing", 100000);
+
+    this_player()->set_skill("duanzao", 1000);
+    this_player()->set_skill("zhizao", 1000);
+    this_player()->set_skill("literate", 1000);
+    this_player()->set_skill("medicine", 1000);
+	this_player()->set_skill("jingmai-xue", 1000);
+    this_player()->set_skill("buddhism", 1000);            
+    this_player()->set_skill("daode-jing", 1000);                   
+    this_player()->set_skill("force", 1000);                
+    this_player()->set_skill("dodge", 1000);                
+    this_player()->set_skill("parry", 1000);
+    this_player()->set_skill("finger", 1000);
+    this_player()->set_skill("beiming-shengong", 1000);     
+    this_player()->set_skill("lingbo-weibu", 1000);         
+    this_player()->set_skill("yiyang-zhi", 1000);
+    this_player()->set_skill("liumai-shenjian", 1000);
+    this_player()->map_skill("parry", "yiyang-zhi");
+    this_player()->map_skill("finger", "yiyang-zhi");
+    this_player()->map_skill("force", "beiming-shengong");
+    this_player()->map_skill("dodge", "lingbo-weibu");
+
     this_player()->set("shen",100000);
     this_player()->set("shizhe_拜师",1);
 
