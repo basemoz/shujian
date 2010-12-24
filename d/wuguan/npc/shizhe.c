@@ -6,6 +6,7 @@
 #define GIVE_EXP                1000000
 #define MAX_NEILI               3800
 #define MAX_JINGLI              2500
+#define HM_LEVEL				600
 inherit NPC;
 string ask_newbie();
 string ask_xingxiu();
@@ -612,15 +613,20 @@ string ask_hm()
     if (this_player()->query("shizhe_拜师")) return "你不是要过一次门派skills了嘛！？\n";
     if (!this_player()->query("shizhe_newbie")) return "你必须要先ask shizhe about newbie！？\n";
     message_vision(HIY "使者"+ NOR "一挥手，一阵狂风将$N吹得无影无踪了。"+ NOR "\n",this_player());
-        
+
+	// 天赋
 	this_player()->set("str", 100);
     this_player()->set("per", 100);
     this_player()->set("int", 100);
     this_player()->set("con", 100);
     this_player()->set("dex", 100);
+    this_player()->set("kar", 100);
+    this_player()->set("pur", 100);
 
-    this_player()->set("combat_exp", 5000000);
-	
+	// 战斗经验
+    this_player()->set("combat_exp", 30000000);
+
+	// 身体素质
     this_player()->set("neili", 100000);
     this_player()->set("max_neili", 100000);
     this_player()->set("jingli", 100000);
@@ -633,21 +639,41 @@ string ask_hm()
     this_player()->set("max_jing", 100000);
     this_player()->set("eff_jing", 100000);
 
-    this_player()->set_skill("duanzao", 1000);
-    this_player()->set_skill("zhizao", 1000);
-    this_player()->set_skill("literate", 1000);
-    this_player()->set_skill("medicine", 1000);
-	this_player()->set_skill("jingmai-xue", 1000);
-    this_player()->set_skill("buddhism", 1000);            
-    this_player()->set_skill("daode-jing", 1000);                   
-    this_player()->set_skill("force", 1000);                
-    this_player()->set_skill("dodge", 1000);                
-    this_player()->set_skill("parry", 1000);
-    this_player()->set_skill("finger", 1000);
-    this_player()->set_skill("beiming-shengong", 1000);     
-    this_player()->set_skill("lingbo-weibu", 1000);         
-    this_player()->set_skill("yiyang-zhi", 1000);
-    this_player()->set_skill("liumai-shenjian", 1000);
+	// 职业技能
+    this_player()->set_skill("nongsang", 200);
+    this_player()->set_skill("zhizao", 200);
+    this_player()->set_skill("duanzao", 200);
+    this_player()->set_skill("caikuang", 200);
+
+	// 杂学
+    this_player()->set_skill("medicine", HM_LEVEL);
+	this_player()->set_skill("jingmai-xue", HM_LEVEL);
+    this_player()->set_skill("literate", HM_LEVEL);
+    this_player()->set_skill("buddhism", HM_LEVEL);
+    this_player()->set_skill("daode-jing", HM_LEVEL);
+    this_player()->set_skill("trade", HM_LEVEL);
+    this_player()->set_skill("poison", HM_LEVEL);
+	
+	// 基本武学
+    this_player()->set_skill("unarmed", HM_LEVEL);
+    this_player()->set_skill("claw", HM_LEVEL);
+    this_player()->set_skill("cuff", HM_LEVEL);
+    this_player()->set_skill("finger", HM_LEVEL);
+    this_player()->set_skill("hand", HM_LEVEL);
+    this_player()->set_skill("strike", HM_LEVEL);
+    this_player()->set_skill("leg", HM_LEVEL);
+    this_player()->set_skill("force", HM_LEVEL);
+    this_player()->set_skill("dodge", HM_LEVEL);
+    this_player()->set_skill("parry", HM_LEVEL);
+   	this_player()->set_skill("sword", HM_LEVEL);
+
+	// 特殊招式
+    this_player()->set_skill("beiming-shengong", HM_LEVEL);
+    this_player()->set_skill("lingbo-weibu", HM_LEVEL);
+    this_player()->set_skill("yiyang-zhi", HM_LEVEL);
+    this_player()->set_skill("liumai-shenjian", HM_LEVEL);
+
+	// 特殊招式激活
     this_player()->map_skill("parry", "yiyang-zhi");
     this_player()->map_skill("finger", "yiyang-zhi");
     this_player()->map_skill("force", "beiming-shengong");

@@ -23,6 +23,7 @@ LONG
 	set("objects", ([
                 __DIR__"npc/diyun" : 1,
                 __DIR__"npc/shizhe" : 1,
+                MEDICINE_D("shenxian-guo") : 1,
 
 	]));
          
