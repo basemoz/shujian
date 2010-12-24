@@ -43,6 +43,7 @@ int is_valid(string id, string ip)
 
 	// ÄÚ²¿ÍøµØÖ· YUJ@SJ 2002-01-30
 	if (ip1 == 10) return 1;
+	if (ip1 == 127) return 1;
 	if (ip1 == 172 && ip2 & 240 == 16) return 1;
 	if (ip1 == 192 && ip2 == 168) return 1;
 
