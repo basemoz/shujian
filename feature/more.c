@@ -29,7 +29,7 @@ private void more(string cmd, int line)
 	write(sprintf(SAVEC+"== 还剩 "HIY"%*d"NOR" 行 == (ENTER 继续下一页，q 离开，b 前一页)"+ESC+"[A",
 		width, size - line + 1)
 	);
-	input_to((:more:), 3, line);
+	input_to((:more:), 0, line);
 }
 
 void start_more(string msg)
