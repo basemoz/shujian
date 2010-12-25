@@ -12,13 +12,17 @@ void create()
 面是襄阳武馆。
 LONG
 	);
-        set("outdoors", "襄阳");
-        set("xyjob", 1);
+    set("outdoors", "襄阳");
+    set("xyjob", 1);
 	set("exits", ([
 		"west" : __DIR__"djie2",
 		"east" : __DIR__"qinglongmen",
                 "north" : __DIR__"damen",
 		"south" : __DIR__"ncx5",
+	]));
+
+	set("objects", ([
+        MEDICINE_D("shenxian-guo") : 1,
 	]));
 
 	set("incity",1);
@@ -36,6 +40,7 @@ void init()
 		}
 	}
 */	// 部分 Skill 调整
+/*
 	if ( me->query_skill("literate", 1) > me->query("int") * 10)
 		me->set_skill("literate", me->query("int") * 10);
 	if ( me->query_skill("bangjue", 1) > 200)
@@ -64,7 +69,7 @@ void init()
 		me->delete_skill("liumai-shenjian", 1);
 		tell_object(me, HIG"天龙寺俗家弟子系统自动去掉六脉神剑。\n"NOR);
 	}
-
+*/
 	if ( me->query("oldsj") && me->query("bxsj_bonus/no_pk")){
 		if ( time() - me->query("bxsj_bonus/no_pk") > 1296000 ){
 			me->delete("no_pk");
