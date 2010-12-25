@@ -1,7 +1,7 @@
 // more.c
 
 #include <ansi.h>
-
+#define LINES_PER_PAGE		40
 static string *text;
 static int size;
 static int width;
@@ -16,11 +16,11 @@ private void more(string cmd, int line)
 			write("\n");
 			return;
 		case "b":
-			line -= 46;
+			line -= LINES_PER_PAGE * 2;
 			if (line < 1) line = 1;
 		default:
-			for (i=line + 23; line <= size && line < i; line++) {
-				if (size > 23)
+			for (i=line + LINES_PER_PAGE; line <= size && line < i; line++) {
+				if (size > LINES_PER_PAGE)
 					write(sprintf("%*d:", width, line));
 				write(sprintf(" %s\n", text[line-1]));
 			}
