@@ -54,7 +54,7 @@ int valid_enable(string usage)
 {
 //        if(this_player()->query("quest/dali/shanlu") && this_player()->query("quest/dali/pass"))
 //修改标志
-        if(this_player()->query("quest/天龙八部/武功/yuxiang") && this_player()->query("quest/天龙八部/武功/pass"))
+//        if(this_player()->query("quest/天龙八部/武功/yuxiang") && this_player()->query("quest/天龙八部/武功/pass"))
 	return usage == "dodge" || usage == "parry";
 }
 
