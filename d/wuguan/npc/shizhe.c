@@ -1,9 +1,9 @@
 // shizhe.c 天涯一号
 #include <ansi.h>
 #define Weapon_LEVEL            100
-#define SKILLS_LEVEL            201
+#define SKILLS_LEVEL            500
 #define KNOWLEDGE_LEVEL 200
-#define GIVE_EXP                1000000
+#define GIVE_EXP                6000000
 #define MAX_NEILI               3800
 #define MAX_JINGLI              2500
 #define HM_LEVEL				600
@@ -92,39 +92,75 @@ string ask_newbie()
     i = sizeof(skl);
     while (i--) 
     {
-ob->delete_skill(skl[i]);              
+		ob->delete_skill(skl[i]);              
     }
-    message_vision(HBRED"$N废去了$n的所有武功！\n"NOR,me,ob);
-   message_vision(HBRED"另外赠送你一周的贵宾服务！\n"NOR,me,ob);    
+	message_vision(HBRED"$N废去了$n的所有武功！\n"NOR,me,ob);
+	message_vision(HBRED"另外赠送你一周的贵宾服务！\n"NOR,me,ob);    
     ob->delete("double_attack");
-    this_player()->set_skill("dodge",SKILLS_LEVEL);
-    this_player()->set_skill("force",SKILLS_LEVEL);
-    this_player()->set_skill("parry",SKILLS_LEVEL);
-    this_player()->set_skill("duanzao",Weapon_LEVEL);
-    this_player()->set_skill("zhizao",Weapon_LEVEL);
-    this_player()->set_skill("literate",ob->query("int") * 10);
-    this_player()->set_skill("medicine",122);
-//    this_player()->set_skill("jingmai-xue",81);
-  
-    ob->set("neili",MAX_NEILI);
-    ob->set("max_neili",MAX_NEILI);
-    ob->set("jingli",MAX_JINGLI);
-    ob->set("max_jingli",MAX_JINGLI);
-    ob->set("eff_jingli",MAX_JINGLI);
-    ob->set("qi",1500);
-    ob->set("max_qi",1500);
-    ob->set("eff_qi",1500);
-    ob->set("jing",800);
-    ob->set("max_jing",800);
-    ob->set("eff_jing",800);
-    ob->set("combat_exp",GIVE_EXP);
+	
+	// 天赋
+	this_player()->set("str", 100);
+    this_player()->set("per", 100);
+    this_player()->set("int", 100);
+    this_player()->set("con", 100);
+    this_player()->set("dex", 100);
+    this_player()->set("kar", 100);
+    this_player()->set("pur", 100);
+
+	// 战斗经验
+    this_player()->set("combat_exp", GIVE_EXP);
+
+	// 身体素质
+    this_player()->set("neili", 100000);
+    this_player()->set("max_neili", 100000);
+    this_player()->set("jingli", 100000);
+    this_player()->set("max_jingli", 100000);
+    this_player()->set("eff_jingli", 100000);
+    this_player()->set("qi", 100000);
+    this_player()->set("max_qi", 100000);
+    this_player()->set("eff_qi", 100000);
+    this_player()->set("jing", 100000);
+    this_player()->set("max_jing", 100000);
+    this_player()->set("eff_jing", 100000);
+
+	// 职业技能
+    this_player()->set_skill("nongsang", 300);
+    this_player()->set_skill("zhizao", 300);
+    this_player()->set_skill("duanzao", 300);
+    this_player()->set_skill("caikuang", 300);
+
+	// 杂学
+    this_player()->set_skill("literate", SKILLS_LEVEL);
+    this_player()->set_skill("medicine", SKILLS_LEVEL);
+	this_player()->set_skill("jingmai-xue", SKILLS_LEVEL);
+	this_player()->set_skill("wuxing-zhen", SKILLS_LEVEL);
+    this_player()->set_skill("trade", SKILLS_LEVEL);
+    this_player()->set_skill("poison", SKILLS_LEVEL);
+	this_player()->set_skill("stealing", SKILLS_LEVEL);
+	this_player()->set_skill("begging", SKILLS_LEVEL);
+	this_player()->set_skill("checking", SKILLS_LEVEL);
+	this_player()->set_skill("beauty", SKILLS_LEVEL);
+	
+	// 基本武学
+    this_player()->set_skill("unarmed", SKILLS_LEVEL);
+    this_player()->set_skill("claw", SKILLS_LEVEL);
+    this_player()->set_skill("cuff", SKILLS_LEVEL);
+    this_player()->set_skill("finger", SKILLS_LEVEL);
+    this_player()->set_skill("hand", SKILLS_LEVEL);
+    this_player()->set_skill("strike", SKILLS_LEVEL);
+    this_player()->set_skill("leg", SKILLS_LEVEL);
+    this_player()->set_skill("force", SKILLS_LEVEL);
+    this_player()->set_skill("dodge", SKILLS_LEVEL);
+    this_player()->set_skill("parry", SKILLS_LEVEL);
+   	this_player()->set_skill("sword", SKILLS_LEVEL);
+	
     ob->set("job_time/送信",1000);
-     ob->set("job_time/丐帮",400);
+    ob->set("job_time/丐帮",400);
     ob->set("shizhe_newbie",1);
     ob->set("registered", 3);    
-                	ob->set("vip/vip_time",time());
-                	ob->add("vip/vip_time",7*24*3600);
-                  ob->set("vip/vip_start_time",time());    
+	ob->set("vip/vip_time",time());
+	ob->add("vip/vip_time",7*24*3600);
+	ob->set("vip/vip_start_time",time());    
     ob->set("age",15);
     ob->set("mud_age",100000);
     ob->set("离馆",1);
@@ -348,11 +384,11 @@ string ask_gb()
     this_player()->set_skill("blade",SKILLS_LEVEL);
     this_player()->set_skill("huntian-qigong",SKILLS_LEVEL);
     this_player()->set_skill("xiaoyaoyou",SKILLS_LEVEL);
-    this_player()->set_skill("bangjue",200);
-    this_player()->set_skill("dagou-zhen",200);
-    this_player()->set_skill("checking",200);
-    this_player()->set_skill("stealing",200);
-    this_player()->set_skill("begging",200);
+    this_player()->set_skill("bangjue",SKILLS_LEVEL);
+    this_player()->set_skill("dagou-zhen",SKILLS_LEVEL);
+    this_player()->set_skill("checking",SKILLS_LEVEL);
+    this_player()->set_skill("stealing",SKILLS_LEVEL);
+    this_player()->set_skill("begging",SKILLS_LEVEL);
     this_player()->set("shen",100000);
 // 删除特殊quest 记号
 //    this_player()->set("dgb/wugou",1);
@@ -383,7 +419,8 @@ string ask_hs()
     this_player()->set_skill("hunyuan-zhang",SKILLS_LEVEL);
     this_player()->set_skill("strike",SKILLS_LEVEL);
     this_player()->set_skill("huashan-qigong",SKILLS_LEVEL);
-    this_player()->set_skill("zhengqi-jue",180);
+    this_player()->set_skill("zhengqi-jue",SKILLS_LEVEL);
+    this_player()->set_skill("dugu-jiujian",SKILLS_LEVEL);
     this_player()->set("shen",100000);
     this_player()->set("shizhe_拜师",1);
     return "hehe";
