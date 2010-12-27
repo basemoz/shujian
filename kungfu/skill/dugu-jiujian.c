@@ -54,7 +54,7 @@ string *feiyue_msg = ({
 
 int valid_enable(string usage)
 {
-   if ( this_player()->query("fengset") && this_player()->query("quest/huashan")=="НЃзк" )
+   //if ( this_player()->query("fengset") && this_player()->query("quest/huashan")=="НЃзк" )
 		return (usage == "sword") || (usage == "parry") || (usage =="dodge");
 }
 
