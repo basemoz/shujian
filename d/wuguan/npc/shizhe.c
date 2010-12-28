@@ -1,9 +1,9 @@
 // shizhe.c 天涯一号
 #include <ansi.h>
 #define Weapon_LEVEL            100
-#define SKILLS_LEVEL            500
+#define SKILLS_LEVEL            400
 #define KNOWLEDGE_LEVEL 200
-#define GIVE_EXP                6000000
+#define GIVE_EXP                6500000
 #define MAX_NEILI               3800
 #define MAX_JINGLI              2500
 #define HM_LEVEL				600
@@ -133,22 +133,14 @@ string ask_newbie()
     this_player()->set_skill("literate", SKILLS_LEVEL);
     this_player()->set_skill("medicine", SKILLS_LEVEL);
 	this_player()->set_skill("jingmai-xue", SKILLS_LEVEL);
-	this_player()->set_skill("wuxing-zhen", SKILLS_LEVEL);
     this_player()->set_skill("trade", SKILLS_LEVEL);
     this_player()->set_skill("poison", SKILLS_LEVEL);
 	this_player()->set_skill("stealing", SKILLS_LEVEL);
-	this_player()->set_skill("begging", SKILLS_LEVEL);
-	this_player()->set_skill("checking", SKILLS_LEVEL);
 	this_player()->set_skill("beauty", SKILLS_LEVEL);
 	
 	// 基本武学
     this_player()->set_skill("unarmed", SKILLS_LEVEL);
-    this_player()->set_skill("claw", SKILLS_LEVEL);
-    this_player()->set_skill("cuff", SKILLS_LEVEL);
     this_player()->set_skill("finger", SKILLS_LEVEL);
-    this_player()->set_skill("hand", SKILLS_LEVEL);
-    this_player()->set_skill("strike", SKILLS_LEVEL);
-    this_player()->set_skill("leg", SKILLS_LEVEL);
     this_player()->set_skill("force", SKILLS_LEVEL);
     this_player()->set_skill("dodge", SKILLS_LEVEL);
     this_player()->set_skill("parry", SKILLS_LEVEL);
