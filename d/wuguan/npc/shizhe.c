@@ -145,6 +145,14 @@ string ask_newbie()
     this_player()->set_skill("dodge", SKILLS_LEVEL);
     this_player()->set_skill("parry", SKILLS_LEVEL);
    	this_player()->set_skill("sword", SKILLS_LEVEL);
+
+	// 特殊招式
+    this_player()->set_skill("dugu-jiujian", SKILLS_LEVEL);
+
+	// 特殊招式激活
+    this_player()->map_skill("sword", "dugu-jiujian");
+    this_player()->map_skill("parry", "dugu-jiujian");
+    this_player()->map_skill("dodge", "dugu-jiujian");
 	
     ob->set("job_time/送信",1000);
     ob->set("job_time/丐帮",400);
@@ -362,18 +370,9 @@ string ask_gb()
     this_object()->delete("title");        
     this_player()->move("/d/gb/pomiao");
     this_player()->set_skill("xianglong-zhang",SKILLS_LEVEL);
-    this_player()->set_skill("lianhua-zhang",SKILLS_LEVEL);
     this_player()->set_skill("strike",SKILLS_LEVEL);
-    this_player()->set_skill("fengmo-zhang",SKILLS_LEVEL);
-    this_player()->set_skill("staff",SKILLS_LEVEL);
-    this_player()->set_skill("huifeng-bian",SKILLS_LEVEL);
-    this_player()->set_skill("whip",SKILLS_LEVEL);
-    this_player()->set_skill("suohou-shou",SKILLS_LEVEL);
-    this_player()->set_skill("hand",SKILLS_LEVEL);
     this_player()->set_skill("dagou-bang",SKILLS_LEVEL);
     this_player()->set_skill("stick",SKILLS_LEVEL);
-    this_player()->set_skill("liuhe-daofa",SKILLS_LEVEL);
-    this_player()->set_skill("blade",SKILLS_LEVEL);
     this_player()->set_skill("huntian-qigong",SKILLS_LEVEL);
     this_player()->set_skill("xiaoyaoyou",SKILLS_LEVEL);
     this_player()->set_skill("bangjue",SKILLS_LEVEL);
