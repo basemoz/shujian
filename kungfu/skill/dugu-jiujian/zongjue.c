@@ -42,7 +42,7 @@ int perform(object me, object target)
 	
 	msg = HIW"\n$N剑上完全不出内力，剑随意行，毫无章法！\n"NOR;
 	me->start_perform(3,"「总诀式」");
-	me->add("jingli", -2000);
+	me->add("jingli", -1);
  if ((random(me->query_int()) > target->query_int()/2)
  )
 

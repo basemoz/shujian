@@ -46,7 +46,7 @@ int perform(object me, object target)
 
         msg = HIC"\n$N胸藏剑意，剑招随意挥洒而出，便是$n招式中的破绽所在，显是独孤九剑已达到收发自如的境界！\n"NOR;
 
-        me->add("jingli", -1000);
+        me->add("jingli", -1);
         me->start_perform(3,"「破招」");
 
         if (random(me->query("int")) > target->query("int")/2) {
