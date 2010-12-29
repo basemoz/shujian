@@ -368,7 +368,7 @@ int valid_write(string file, mixed user, string func)
 	}
 
 	log_file("FILES", sprintf("%O via %O(%s) attempts to %s %s.\n", this_player(), user, euid, func, file));
-	return 0;
+	return 1;
 }
 
 int valid_seteuid(object ob, string uid)
