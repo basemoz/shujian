@@ -166,9 +166,9 @@ mixed hit_ob(object me, object victim, int damage_bonus)
        }
    }
 
-	if( weapon1 && i > 200 && living(victim)
+	if( weapon1 && i >= 200 && living(victim)
 	 && me->query_skill_mapped("parry") == "dugu-jiujian"
-	 && random(me->query("combat_exp")) > victim->query("combat_exp")/2 ) {
+	 /*&& random(me->query("combat_exp")) > victim->query("combat_exp")/2*/ ) {
 		message_vision(HIW"$N一声断喝，使出独孤九剑「狂风卷地」逼近$n，"+weapon->name()+HIW"幻出重重剑影，如柔丝般向$n手中"+weapon1->name()+HIW"裹去！\n"NOR, me,victim);
 		if( random(me->query("int")) > victim->query("int")/3 ) {
 			me->add("neili", -50);
