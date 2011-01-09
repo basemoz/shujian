@@ -20,7 +20,7 @@ int perform(object me, object target)
 		return notify_fail("拔刀术只能对战斗中的对手使用。\n");
 	message_vision(RED"$N收剑入鞘目不转睛地盯着$n，准备发出致命一击。\n"NOR,me,target);
     me->start_call_out( (: call_other, __FILE__, "kill_him", me, target :), random(1)+1);
-	me->start_busy(5);
+	me->start_busy(3);
 	if (userp(target))
 		target->start_busy(4);
 	if (!userp(target))
