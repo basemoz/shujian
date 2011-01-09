@@ -401,7 +401,7 @@ void reincarnate()
 	set("qi", query("eff_qi"));
 	if (query("jingli") < query("eff_jingli") + query_temp("apply/jingli"))
 		set("jingli", query("eff_jingli") + query_temp("apply/jingli"));
-	if (query("neili") < query("eff_neili") + query_temp("apply/neili"))
+	if (query("neili") < query("max_neili") + query_temp("apply/neili"))
 		set("neili", query("max_neili") + query_temp("apply/neili"));
 	set("food", max_food_capacity());
 	set("water", max_water_capacity());
