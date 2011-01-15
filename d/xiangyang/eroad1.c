@@ -23,6 +23,7 @@ LONG
 
 	set("objects", ([
         MEDICINE_D("shenxian-guo") : 1,
+		"/clone/gift/chuansong_fu" : 1,
 	]));
 
 	set("incity",1);

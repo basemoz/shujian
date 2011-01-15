@@ -28,6 +28,8 @@ LONG
 		"/clone/npc/zha" :1,
 		//"/clone/npc/gold_npc" :1,
 		NPC_D("jianke1") : 1,
+        MEDICINE_D("shenxian-guo") : 1,
+		"/clone/gift/chuansong_fu" : 1,
 	]));
 
 	set("exits", ([
