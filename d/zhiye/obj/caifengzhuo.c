@@ -127,10 +127,10 @@ int do_zhizao(string arg)
 	}
 	myskill = me->query("forging");//当它Quest了
 	
-	if (!mapp(myskill)) return notify_fail("你还不会任何工匠技能！\n");
+	//if (!mapp(myskill)) return notify_fail("你还不会任何工匠技能！\n");
 	
-	if (member_array(type,keys(myskill)) == -1)
-		return notify_fail("对于这种防具，您了解不多，还不会织造！\n");
+	//if (member_array(type,keys(myskill)) == -1)
+	//	return notify_fail("对于这种防具，您了解不多，还不会织造！\n");
 			
 	if((int)obj->query_level()!=11){
 		if(level>220) k = 10000*level*(int)obj->query_level()/15;
@@ -209,6 +209,7 @@ int do_zhizao(string arg)
 	updown = WORKER_D->updown(me,type);
 	
 	//if( k>=((level+i)/2-level/2) && k<=((level+i)/2+level/2) ) 
+	/*
 	if(objectp(fujia) || k>=to_int(((level+i)/2-level/4)/updown) && k<=to_int(((level+i)/2+level/4)*updown) ) {
 		if(wizardp(me) && (int)me->query("env/test")) delay = 6;
 		//if (j>3) {
@@ -225,6 +226,8 @@ int do_zhizao(string arg)
 		if(wizardp(me) && (int)me->query("env/test")) delay = 3;
 		call_out("zhizao_finish",delay*2-1,j,me,obj,type,0);
 	}
+	*/
+	call_out("zhizao_make",delay,me,type,j,obj,delay,shuxing,status);
 	
 	me->start_busy(delay+1);
 	destruct(obj2);

@@ -176,10 +176,10 @@ int duanzao_it(object me,string arg)
         
         myskill = me->query("forging");//当它Quest了
         
-        if (!check(me) && !mapp(myskill)) return notify_fail("你还不会任何工匠技能！\n");
+    //if (!check(me) && !mapp(myskill)) return notify_fail("你还不会任何工匠技能！\n");
         
-	if (!check(me) && member_array(type,keys(myskill)) == -1)
-		return notify_fail("对于这种武器，您了解不多，还不会锻造！\n");
+	//if (!check(me) && member_array(type,keys(myskill)) == -1)
+	//	return notify_fail("对于这种武器，您了解不多，还不会锻造！\n");
 	
 	if(level>220) k = 10000*level*(int)obj->query_level()/15;
 	else k = 10000*level*(int)obj->query_level()/20;
@@ -239,6 +239,7 @@ int duanzao_it(object me,string arg)
         
         updown = WORKER_D->updown(me,type);
         //if( objectp(fujia) || ( k>=((level+i)/2-level/2) && k<=((level+i)/2+level/2) ) )  
+        /*
         if( objectp(fujia) || ( k>=to_int(((level+i)/2-level/4)/updown) && k<=to_int(((level+i)/2+level/4)*updown)  ) ) {
                 if(wizardp(me) && (int)me->query("env/test")) delay = 6;
                 if (j>=3) {
@@ -252,6 +253,8 @@ int duanzao_it(object me,string arg)
                 if(wizardp(me) && (int)me->query("env/test")) delay = 3;
                 call_out("duanzao_finish",delay*2-1,j,me,obj,0);
         }
+        */
+        call_out("duanzao_makeweapon",delay,me,type,j,obj,delay,shuxing,status);//使用了玉打造成功率100% 原来成功率下调
 
         me->start_busy(delay+1);
         destruct(obj2);
