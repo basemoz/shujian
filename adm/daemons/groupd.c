@@ -277,6 +277,20 @@ int save_group_member(string gid)
 // 从数据库和存盘文件里读取帮派数据，并初始化group阵列
 protected void setup_group()
 {
+	string gid;
+	mixed files = get_dir(GROUP_SAVE_DIR,-1);
+	int i=sizeof(files);
+	while(i--)
+	{
+		if(files[i][1]!=-2) continue;
+		gid = files[i][0];
+		if(!load_group(gid)) continue;
+	}
+
+	sort_group();		// 为glist排序
+
+	return;
+
 /*	mixed mysql;
 	mixed *res;
 	int i;
