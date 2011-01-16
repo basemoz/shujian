@@ -1583,11 +1583,13 @@ void check_user_group(object me)
 
 	if( !me->query("group") ) return;
 	gid = me->query("group/id");
+	/*
 	if( !exist_now(gid) ) {
 		me->delete("group");
 		tell_object(me,RED"你所属的帮派已经解散了。\n"NOR);
 		return;
 	}
+	*/
 	if( !site_now(gid) ) return;
 
 	if( me->query("group/class") == 1 ) {
