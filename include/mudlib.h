@@ -7,7 +7,7 @@
 #define MUDLIB_VERSION_NUMBER	"1.0"
 #define MUDLIB_VERSION		(MUDLIB_NAME + " " + MUDLIB_VERSION_NUMBER)
 
-#define INTERMUD_MUD_NAME   "SJTX"
+#define INTERMUD_MUD_NAME   "SHTX"
 #define CHINESE_MUD_NAME    "¡¸Êé½£ÌìÏÂ¡¹"
 
 #endif
