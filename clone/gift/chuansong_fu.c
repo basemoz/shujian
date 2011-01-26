@@ -93,6 +93,7 @@ void init()
 {
 	if (environment() == this_player()) {
 		add_action("do_fly", "fly");
+		add_action("do_roar", "roar");
 	}
 }
 
@@ -145,3 +146,48 @@ int do_fly(string arg)
 
 	return me->move(dest);
 }
+
+int do_roar(string arg)
+{
+	object me = this_player();
+	object env;
+	object ob;
+	int	i, count = 0;
+
+	// 先统计这一声狮子吼能把多少人吼晕，显示不同的信息
+	env = environment(me);
+	foreach (ob in all_inventory(env))
+	{
+		if(!ob || ob == me || !living(ob))
+			continue;
+		
+		count++;
+	}
+	
+	if (count > 0)
+	{
+		message_vision(HIR "$N将一张"
+			+name()+
+			HIR "贴在脑门上，猛然发出一声惊天动地的大喝，风云为之变色，周围众人立足不稳，纷纷昏倒在地。\n"
+			NOR,me);
+
+		// 让活着的生物晕倒
+		foreach (ob in all_inventory(env))
+		{
+			if(!ob || ob == me || !living(ob))
+				continue;
+			
+			ob->unconcious(); 
+		}
+	}
+	else
+	{
+		message_vision(HIB "$N将一张"
+			+name()+
+			HIB "贴在脑门上，猛然发出一声惊天动地的大喝，四野空旷，空山回音。\n"
+			NOR,me);
+	}
+
+	return 1;
+}
+
