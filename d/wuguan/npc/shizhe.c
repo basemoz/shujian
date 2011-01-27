@@ -1,9 +1,9 @@
 // shizhe.c 天涯一号
 #include <ansi.h>
 #define Weapon_LEVEL            100
-#define SKILLS_LEVEL            400
+#define SKILLS_LEVEL            200
 #define KNOWLEDGE_LEVEL 200
-#define GIVE_EXP                6500000
+#define GIVE_EXP                800000
 #define MAX_NEILI               3800
 #define MAX_JINGLI              2500
 #define HM_LEVEL				600
@@ -124,10 +124,10 @@ string ask_newbie()
     this_player()->set("eff_jing", 100000);
 
 	// 职业技能
-    this_player()->set_skill("nongsang", 300);
-    this_player()->set_skill("zhizao", 300);
-    this_player()->set_skill("duanzao", 300);
-    this_player()->set_skill("caikuang", 300);
+    this_player()->set_skill("nongsang", SKILLS_LEVEL);
+    this_player()->set_skill("zhizao", SKILLS_LEVEL);
+    this_player()->set_skill("duanzao", SKILLS_LEVEL);
+    this_player()->set_skill("caikuang", SKILLS_LEVEL);
 
 	// 杂学
     this_player()->set_skill("literate", SKILLS_LEVEL);
@@ -499,8 +499,8 @@ string ask_thd()
     this_player()->set_skill("xuanfeng-tui",SKILLS_LEVEL);
     this_player()->set_skill("sword", SKILLS_LEVEL);
     this_player()->set_skill("yuxiao-jian", SKILLS_LEVEL);
-    this_player()->set_skill("taoism", 200);
-    this_player()->set_skill("qimen-bagua", 200);
+    this_player()->set_skill("taoism", SKILLS_LEVEL);
+    this_player()->set_skill("qimen-bagua", SKILLS_LEVEL);
     this_player()->set("shizhe_拜师",1);
     return "hehe";
 }
