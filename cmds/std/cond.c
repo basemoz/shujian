@@ -39,6 +39,7 @@ string get_con_name(string coni)
 		case "xuanmin_poison"	: name = "玄冥神掌寒毒"; break;
 		case "xx_poison"	: name = "星宿掌毒"; break;
 		case "wh_poison"	: name = "神龙五行毒"; break;	
+		case "miyao"		: name = "神仙和合散"; break;	
 		
 		// 伤类
 		case "broken_arm"	: name = "断手"; break;
