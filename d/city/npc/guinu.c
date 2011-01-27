@@ -58,7 +58,7 @@ void init()
                 remove_call_out("greeting");
                 call_out("greeting", 1, ob);
         }
-//        add_action("do_sell","sell");
+        add_action("do_sell","sell");
 }
 
 void greeting(object me)
