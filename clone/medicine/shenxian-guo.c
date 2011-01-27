@@ -35,9 +35,14 @@ int do_eat(string arg)
 	if (!id(arg)) return 0;
 	message_vision(HIG "$N吃下一枚"
 	+name()+
-	HIG "，顿时觉得精力旺盛，甚至不再感到干渴饥饿。\n"
+	HIG "，顿时觉得精力旺盛，甚至不再感到干渴饥饿。\n"+
+	HIG "同时身上的种种不适(中毒、内伤、外伤、定身)都消失了。\n"
 	NOR,me);
 	"/adm/daemons/emoted"->do_emote(me,"taste");
+	me->clear_conditions_by_type("poison");
+	me->clear_conditions_by_type("hurt");
+	me->clear_conditions_by_type("wound");
+	me->clear_conditions_by_type("busy");
 	me->reincarnate();
 
 	//destruct(this_object());
