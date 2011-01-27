@@ -42,6 +42,7 @@ int do_eat(string arg)
 	me->clear_conditions_by_type("poison");
 	me->clear_conditions_by_type("hurt");
 	me->clear_conditions_by_type("wound");
+	me->clear_conditions_by_type("illness");
 	me->clear_conditions_by_type("busy");
 	me->reincarnate();
 
