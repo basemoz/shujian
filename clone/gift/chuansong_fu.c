@@ -161,7 +161,7 @@ int do_roar(string arg)
 		if (!ob || !living(ob))
 			return notify_fail("你要对谁使用狮子吼?\n");
 		
-		message_vision(HIR "$N对着$n阴阴地一笑，嘴里念念有词，$n只觉得天旋地转，站立不稳，昏倒在地。\n"
+		message_vision(HIR "$N对着$n冷笑一声：「" + RANK_D->query_rude(ob) + "，给我躺下吧！」\n"
 			NOR,me, ob);
 		ob->unconcious();
 		return 1;
