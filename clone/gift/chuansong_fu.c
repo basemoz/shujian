@@ -154,6 +154,19 @@ int do_roar(string arg)
 	object ob;
 	int	i, count = 0;
 
+	// 判断是不是针对特点的人发出狮子吼
+	if (arg)
+	{
+		ob = present(arg, environment(me));
+		if (!ob || !living(ob))
+			return notify_fail("你要对谁使用狮子吼?\n");
+		
+		message_vision(HIR "$N对着$n阴阴地一笑，嘴里念念有词，$n只觉得天旋地转，站立不稳，昏倒在地。\n"
+			NOR,me, ob);
+		ob->unconcious();
+		return 1;
+	}
+	
 	// 先统计这一声狮子吼能把多少人吼晕，显示不同的信息
 	env = environment(me);
 	foreach (ob in all_inventory(env))
