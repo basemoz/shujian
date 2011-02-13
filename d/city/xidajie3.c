@@ -30,7 +30,7 @@ LONG
 
 int valid_leave(object me, string dir)
 {
-	if (dir == "north" && (!userp(me) || me->query("age") < 18 && !wizardp(me)))
-		return notify_fail("小朋友不要到那种地方去！！\n");
+	//if (dir == "north" && (!userp(me) || me->query("age") < 18 && !wizardp(me)))
+	//	return notify_fail("小朋友不要到那种地方去！！\n");
         return ::valid_leave(me, dir);
 }
