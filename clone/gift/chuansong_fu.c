@@ -114,14 +114,25 @@ void create()
 int do_fly(string arg)
 {
 	object me = this_player();
-	object ob, where;
+	object ob, here, where;
 	string dest;
+	mapping exits;
 
 	if (!arg || arg == "")
 		return notify_fail("你想传送到哪儿?\n");
 
-	// 先判断是不是地名
-	dest = address[arg];
+	// 判断是不是方向
+	here = environment(me);
+	if (mapp(exits = here->query("exits")))
+	{
+		dest = exits[arg];
+	}
+	
+	// 判断是不是地名
+	if (!dest)
+	{
+		dest = address[arg];
+	}
 
 	// 如果不是地名，判断是不是人名
 	if (!dest)
